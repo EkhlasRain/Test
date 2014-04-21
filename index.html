@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Device Properties Example</title>
+
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        function SayHello() {
+            document.getElementById("txt").innerHTML = "Hello!!!!";
+        }
+        //
+        document.addEventListener("deviceready", onDeviceReady, false);
+
+        // device APIs are available
+        //
+        function onDeviceReady() {
+        }
+
+    </script>
+</head>
+<body>
+    <div align="center">
+        <button onclick="SayHello()">click me</button><br />
+        <b>
+            <span id="txt"></span>
+        </b>
+    </div>
+
+</body>
+</html>
